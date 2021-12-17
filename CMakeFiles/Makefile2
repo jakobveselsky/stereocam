@@ -54,10 +54,10 @@ RM = /usr/local/Cellar/cmake/3.22.0/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/jakobveselsky/Desktop/stereo
+CMAKE_SOURCE_DIR = /Users/jakobveselsky/Desktop/Stereo1/stereocam
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/jakobveselsky/Desktop/stereo
+CMAKE_BINARY_DIR = /Users/jakobveselsky/Desktop/Stereo1/stereocam
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -65,6 +65,8 @@ CMAKE_BINARY_DIR = /Users/jakobveselsky/Desktop/stereo
 # The main recursive "all" target.
 all: CMakeFiles/calibrate.dir/all
 all: CMakeFiles/generate_depth_map.dir/all
+all: CMakeFiles/filter.dir/all
+all: CMakeFiles/canny.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -74,6 +76,8 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/calibrate.dir/clean
 clean: CMakeFiles/generate_depth_map.dir/clean
+clean: CMakeFiles/filter.dir/clean
+clean: CMakeFiles/canny.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -83,14 +87,14 @@ clean: CMakeFiles/generate_depth_map.dir/clean
 CMakeFiles/calibrate.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/calibrate.dir/build.make CMakeFiles/calibrate.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/calibrate.dir/build.make CMakeFiles/calibrate.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jakobveselsky/Desktop/stereo/CMakeFiles --progress-num=1,2 "Built target calibrate"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jakobveselsky/Desktop/Stereo1/stereocam/CMakeFiles --progress-num=1,2 "Built target calibrate"
 .PHONY : CMakeFiles/calibrate.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/calibrate.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jakobveselsky/Desktop/stereo/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jakobveselsky/Desktop/Stereo1/stereocam/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/calibrate.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jakobveselsky/Desktop/stereo/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jakobveselsky/Desktop/Stereo1/stereocam/CMakeFiles 0
 .PHONY : CMakeFiles/calibrate.dir/rule
 
 # Convenience name for target.
@@ -109,14 +113,14 @@ CMakeFiles/calibrate.dir/clean:
 CMakeFiles/generate_depth_map.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/generate_depth_map.dir/build.make CMakeFiles/generate_depth_map.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/generate_depth_map.dir/build.make CMakeFiles/generate_depth_map.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jakobveselsky/Desktop/stereo/CMakeFiles --progress-num=3,4 "Built target generate_depth_map"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jakobveselsky/Desktop/Stereo1/stereocam/CMakeFiles --progress-num=7,8 "Built target generate_depth_map"
 .PHONY : CMakeFiles/generate_depth_map.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/generate_depth_map.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jakobveselsky/Desktop/stereo/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jakobveselsky/Desktop/Stereo1/stereocam/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/generate_depth_map.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jakobveselsky/Desktop/stereo/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jakobveselsky/Desktop/Stereo1/stereocam/CMakeFiles 0
 .PHONY : CMakeFiles/generate_depth_map.dir/rule
 
 # Convenience name for target.
@@ -127,6 +131,58 @@ generate_depth_map: CMakeFiles/generate_depth_map.dir/rule
 CMakeFiles/generate_depth_map.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/generate_depth_map.dir/build.make CMakeFiles/generate_depth_map.dir/clean
 .PHONY : CMakeFiles/generate_depth_map.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/filter.dir
+
+# All Build rule for target.
+CMakeFiles/filter.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/filter.dir/build.make CMakeFiles/filter.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/filter.dir/build.make CMakeFiles/filter.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jakobveselsky/Desktop/Stereo1/stereocam/CMakeFiles --progress-num=5,6 "Built target filter"
+.PHONY : CMakeFiles/filter.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/filter.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jakobveselsky/Desktop/Stereo1/stereocam/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/filter.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jakobveselsky/Desktop/Stereo1/stereocam/CMakeFiles 0
+.PHONY : CMakeFiles/filter.dir/rule
+
+# Convenience name for target.
+filter: CMakeFiles/filter.dir/rule
+.PHONY : filter
+
+# clean rule for target.
+CMakeFiles/filter.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/filter.dir/build.make CMakeFiles/filter.dir/clean
+.PHONY : CMakeFiles/filter.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/canny.dir
+
+# All Build rule for target.
+CMakeFiles/canny.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/canny.dir/build.make CMakeFiles/canny.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/canny.dir/build.make CMakeFiles/canny.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jakobveselsky/Desktop/Stereo1/stereocam/CMakeFiles --progress-num=3,4 "Built target canny"
+.PHONY : CMakeFiles/canny.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/canny.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jakobveselsky/Desktop/Stereo1/stereocam/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/canny.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jakobveselsky/Desktop/Stereo1/stereocam/CMakeFiles 0
+.PHONY : CMakeFiles/canny.dir/rule
+
+# Convenience name for target.
+canny: CMakeFiles/canny.dir/rule
+.PHONY : canny
+
+# clean rule for target.
+CMakeFiles/canny.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/canny.dir/build.make CMakeFiles/canny.dir/clean
+.PHONY : CMakeFiles/canny.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

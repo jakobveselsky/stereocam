@@ -1,4 +1,6 @@
-/Users/jakobveselsky/Desktop/stereo/CMakeFiles/calibrate.dir
-/Users/jakobveselsky/Desktop/stereo/CMakeFiles/generate_depth_map.dir
-/Users/jakobveselsky/Desktop/stereo/CMakeFiles/edit_cache.dir
-/Users/jakobveselsky/Desktop/stereo/CMakeFiles/rebuild_cache.dir
+/Users/jakobveselsky/Desktop/Stereo1/stereocam/CMakeFiles/calibrate.dir
+/Users/jakobveselsky/Desktop/Stereo1/stereocam/CMakeFiles/generate_depth_map.dir
+/Users/jakobveselsky/Desktop/Stereo1/stereocam/CMakeFiles/filter.dir
+/Users/jakobveselsky/Desktop/Stereo1/stereocam/CMakeFiles/canny.dir
+/Users/jakobveselsky/Desktop/Stereo1/stereocam/CMakeFiles/edit_cache.dir
+/Users/jakobveselsky/Desktop/Stereo1/stereocam/CMakeFiles/rebuild_cache.dir

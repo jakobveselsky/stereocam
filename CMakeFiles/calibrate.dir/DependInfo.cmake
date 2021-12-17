@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/jakobveselsky/Desktop/stereo/calibrate.cpp" "CMakeFiles/calibrate.dir/calibrate.cpp.o" "gcc" "CMakeFiles/calibrate.dir/calibrate.cpp.o.d"
+  "/Users/jakobveselsky/Desktop/Stereo1/stereocam/calibrate.cpp" "CMakeFiles/calibrate.dir/calibrate.cpp.o" "gcc" "CMakeFiles/calibrate.dir/calibrate.cpp.o.d"
   )
 
 # Targets to which this target links.

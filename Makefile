@@ -57,10 +57,10 @@ RM = /usr/local/Cellar/cmake/3.22.0/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/jakobveselsky/Desktop/stereo
+CMAKE_SOURCE_DIR = /Users/jakobveselsky/Desktop/Stereo1/stereocam
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/jakobveselsky/Desktop/stereo
+CMAKE_BINARY_DIR = /Users/jakobveselsky/Desktop/Stereo1/stereocam
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jakobveselsky/Desktop/stereo/CMakeFiles /Users/jakobveselsky/Desktop/stereo//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jakobveselsky/Desktop/Stereo1/stereocam/CMakeFiles /Users/jakobveselsky/Desktop/Stereo1/stereocam//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jakobveselsky/Desktop/stereo/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jakobveselsky/Desktop/Stereo1/stereocam/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -142,6 +142,32 @@ generate_depth_map/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/generate_depth_map.dir/build.make CMakeFiles/generate_depth_map.dir/build
 .PHONY : generate_depth_map/fast
 
+#=============================================================================
+# Target rules for targets named filter
+
+# Build rule for target.
+filter: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 filter
+.PHONY : filter
+
+# fast build rule for target.
+filter/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/filter.dir/build.make CMakeFiles/filter.dir/build
+.PHONY : filter/fast
+
+#=============================================================================
+# Target rules for targets named canny
+
+# Build rule for target.
+canny: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 canny
+.PHONY : canny
+
+# fast build rule for target.
+canny/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/canny.dir/build.make CMakeFiles/canny.dir/build
+.PHONY : canny/fast
+
 calibrate.o: calibrate.cpp.o
 .PHONY : calibrate.o
 
@@ -165,6 +191,30 @@ calibrate.s: calibrate.cpp.s
 calibrate.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/calibrate.dir/build.make CMakeFiles/calibrate.dir/calibrate.cpp.s
 .PHONY : calibrate.cpp.s
+
+canny.o: canny.cpp.o
+.PHONY : canny.o
+
+# target to build an object file
+canny.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/canny.dir/build.make CMakeFiles/canny.dir/canny.cpp.o
+.PHONY : canny.cpp.o
+
+canny.i: canny.cpp.i
+.PHONY : canny.i
+
+# target to preprocess a source file
+canny.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/canny.dir/build.make CMakeFiles/canny.dir/canny.cpp.i
+.PHONY : canny.cpp.i
+
+canny.s: canny.cpp.s
+.PHONY : canny.s
+
+# target to generate assembly for a file
+canny.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/canny.dir/build.make CMakeFiles/canny.dir/canny.cpp.s
+.PHONY : canny.cpp.s
 
 depthMap.o: depthMap.cpp.o
 .PHONY : depthMap.o
@@ -190,6 +240,30 @@ depthMap.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/generate_depth_map.dir/build.make CMakeFiles/generate_depth_map.dir/depthMap.cpp.s
 .PHONY : depthMap.cpp.s
 
+filter.o: filter.cpp.o
+.PHONY : filter.o
+
+# target to build an object file
+filter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/filter.dir/build.make CMakeFiles/filter.dir/filter.cpp.o
+.PHONY : filter.cpp.o
+
+filter.i: filter.cpp.i
+.PHONY : filter.i
+
+# target to preprocess a source file
+filter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/filter.dir/build.make CMakeFiles/filter.dir/filter.cpp.i
+.PHONY : filter.cpp.i
+
+filter.s: filter.cpp.s
+.PHONY : filter.s
+
+# target to generate assembly for a file
+filter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/filter.dir/build.make CMakeFiles/filter.dir/filter.cpp.s
+.PHONY : filter.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -199,13 +273,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... calibrate"
+	@echo "... canny"
+	@echo "... filter"
 	@echo "... generate_depth_map"
 	@echo "... calibrate.o"
 	@echo "... calibrate.i"
 	@echo "... calibrate.s"
+	@echo "... canny.o"
+	@echo "... canny.i"
+	@echo "... canny.s"
 	@echo "... depthMap.o"
 	@echo "... depthMap.i"
 	@echo "... depthMap.s"
+	@echo "... filter.o"
+	@echo "... filter.i"
+	@echo "... filter.s"
 .PHONY : help
 
 

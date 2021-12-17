@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/jakobveselsky/Desktop/stereo/depthMap.cpp" "CMakeFiles/generate_depth_map.dir/depthMap.cpp.o" "gcc" "CMakeFiles/generate_depth_map.dir/depthMap.cpp.o.d"
+  "/Users/jakobveselsky/Desktop/Stereo1/stereocam/depthMap.cpp" "CMakeFiles/generate_depth_map.dir/depthMap.cpp.o" "gcc" "CMakeFiles/generate_depth_map.dir/depthMap.cpp.o.d"
   )
 
 # Targets to which this target links.
